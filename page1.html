@@ -4,16 +4,23 @@
 <head>
     <meta charset="utf-8" />
     <title>praktika</title>
+    <style>
+        .button {
+            background-color: #ccc;
+            width: 100px;
+            padding: 8px 20px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <button width="600" height="600" onclick="git()">press</button>
+    <button class="button">press</button>
     <script>
-        function git() {
-
-
-
+        const git = () => {
+            window.console.log('helloW World!')
         }
-
+        let button = document.querySelector('.button');
+        button.addEventListener('click', git)
     </script>
 </body>
 </html>
